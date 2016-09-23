@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.etoak.dao.LoginDaoIf">
+	<select id="login" parameterType="map" resultType="java.lang.String">
+		select name from yc where name=#{name} and pass=#{pass}
+	</select>
+</mapper>
